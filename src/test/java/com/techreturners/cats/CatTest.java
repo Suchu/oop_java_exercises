@@ -3,7 +3,6 @@ package com.techreturners.cats;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-import org.junit.Ignore;
 
 public class CatTest {
 
@@ -53,14 +52,12 @@ public class CatTest {
     }
 
     @Test
-    @Ignore("this test is not ready yet")
     public void feedTheCheetah() {
         Cat cheetahCat = new CheetahCat();
         assertEquals("Zzzzzzz", cheetahCat.eat());
     }
 
     @Test
-    @Ignore("this test is not ready yet")
     public void feedTheCat() {
         Cat domesticCat = new DomesticCat();
         assertEquals("Purrrrrrr", domesticCat.eat());
