@@ -14,21 +14,19 @@ public class CatTest {
     }
 
     @Test
-//    @Ignore("this test is not ready yet")
     public void checkCatCanGoToSleep() {
         Cat domesticCat = new DomesticCat();
         domesticCat.goToSleep();
         assertTrue("Cat should be snoozing", domesticCat.isAsleep());
     }
-//
-//    @Test
-//    @Ignore("this test is not ready yet")
-//    public void checkCatCanWakep() {
-//        Cat domesticCat = new DomesticCat();
-//        domesticCat.goToSleep();
-//        domesticCat.wakeUp();
-//        assertFalse("Cat should be awake now", domesticCat.isAsleep());
-//    }
+
+    @Test
+    public void checkCatCanWakep() {
+        Cat domesticCat = new DomesticCat();
+        domesticCat.goToSleep();
+        domesticCat.wakeUp();
+        assertFalse("Cat should be awake now", domesticCat.isAsleep());
+    }
 //
 //    @Test
 //    @Ignore("this test is not ready yet")

@@ -9,10 +9,14 @@ public abstract class Attribute implements Cat {
     }
 
     public Boolean isAsleep() {
-        return this.asleep;
+        return asleep;
     }
 
     public void goToSleep() {
-        this.asleep = true;
+        asleep = true;
+    }
+
+    public void wakeUp() {
+        asleep = false;
     }
 }
