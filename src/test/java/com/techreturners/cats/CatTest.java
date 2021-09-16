@@ -21,7 +21,7 @@ public class CatTest {
     }
 
     @Test
-    public void checkCatCanWakep() {
+    public void checkCatCanWakeUp() {
         Cat domesticCat = new DomesticCat();
         domesticCat.goToSleep();
         domesticCat.wakeUp();
@@ -59,10 +59,10 @@ public class CatTest {
         assertEquals("Zzzzzzz", cheetahCat.eat());
     }
 
-//    @Test
-//    @Ignore("this test is not ready yet")
-//    public void feedTheCat() {
-//        Cat domesticCat = new DomesticCat();
-//        assertEquals("Purrrrrrr", domesticCat.eat());
-//    }
+    @Test
+    @Ignore("this test is not ready yet")
+    public void feedTheCat() {
+        Cat domesticCat = new DomesticCat();
+        assertEquals("Purrrrrrr", domesticCat.eat());
+    }
 }

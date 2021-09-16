@@ -6,8 +6,14 @@ public class DomesticCat extends Attribute {
         super(false, "domestic", 23);
     }
 
-    @Override
     public String eat() {
-        return null;
+        double rand = Math.floor(Math.random());
+        if (rand < 0.5) {
+            return "Purrrrrrr";
+        } else {
+            return "It will do I suppose";
+        }
     }
+
+
 }

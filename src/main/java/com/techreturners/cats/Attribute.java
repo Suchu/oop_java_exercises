@@ -4,7 +4,7 @@ public abstract class Attribute implements Cat {
 
     private Boolean asleep;
     private final String setting;
-    private int height;
+    private final int height;
 
     public Attribute(Boolean asleep, String setting, int height) {
         this.asleep = asleep;
