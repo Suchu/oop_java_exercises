@@ -31,4 +31,6 @@ public abstract class Attribute implements Cat {
     public int getAverageHeight() {
         return height;
     }
+
+    public abstract String eat();
 }

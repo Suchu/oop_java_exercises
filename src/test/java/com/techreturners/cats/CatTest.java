@@ -45,13 +45,12 @@ public class CatTest {
         Cat lionCat = new LionCat();
         assertEquals(1100, lionCat.getAverageHeight());
     }
-//
-//    @Test
-//    @Ignore("this test is not ready yet")
-//    public void feedTheLion() {
-//        Cat lionCat = new LionCat();
-//        assertEquals("Roar!!!!", lionCat.eat());
-//    }
+
+    @Test
+    public void feedTheLion() {
+        Cat lionCat = new LionCat();
+        assertEquals("Roar!!!!", lionCat.eat());
+    }
 //
 //    @Test
 //    @Ignore("this test is not ready yet")
