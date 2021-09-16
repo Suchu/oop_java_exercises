@@ -2,10 +2,17 @@ package com.techreturners.cats;
 
 public abstract class Attribute implements Cat {
 
-    Boolean asleep = false;
+    private Boolean asleep;
 
-    public Boolean isAsleep() {
-        return asleep;
+    public Attribute(Boolean asleep) {
+        this.asleep = asleep;
     }
 
+    public Boolean isAsleep() {
+        return this.asleep;
+    }
+
+    public void goToSleep() {
+        this.asleep = true;
+    }
 }

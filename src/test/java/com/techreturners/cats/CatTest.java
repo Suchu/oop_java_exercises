@@ -13,13 +13,13 @@ public class CatTest {
         assertFalse("Cat should be awake by default", domesticCat.isAsleep());
     }
 
-//    @Test
-////    @Ignore("this test is not ready yet")
-//    public void checkCatCanGoToSleep() {
-//        Cat domesticCat = new DomesticCat();
-//        domesticCat.goToSleep();
-//        assertTrue("Cat should be snoozing", domesticCat.isAsleep());
-//    }
+    @Test
+//    @Ignore("this test is not ready yet")
+    public void checkCatCanGoToSleep() {
+        Cat domesticCat = new DomesticCat();
+        domesticCat.goToSleep();
+        assertTrue("Cat should be snoozing", domesticCat.isAsleep());
+    }
 //
 //    @Test
 //    @Ignore("this test is not ready yet")
