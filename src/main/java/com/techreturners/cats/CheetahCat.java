@@ -1,12 +1,13 @@
 package com.techreturners.cats;
 
-public class LionCat extends Attribute {
+public class CheetahCat extends Attribute {
 
-    public LionCat() {
+    public CheetahCat() {
         super(false, "wild", 1100);
     }
 
+    @Override
     public String eat() {
-        return "Roar!!!!";
+        return "Zzzzzzz";
     }
 }

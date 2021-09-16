@@ -51,14 +51,14 @@ public class CatTest {
         Cat lionCat = new LionCat();
         assertEquals("Roar!!!!", lionCat.eat());
     }
-//
-//    @Test
-//    @Ignore("this test is not ready yet")
-//    public void feedTheCheetah() {
-//        Cat cheetahCat = new CheetahCat();
-//        assertEquals("Zzzzzzz", cheetahCat.eat());
-//    }
-//
+
+    @Test
+    @Ignore("this test is not ready yet")
+    public void feedTheCheetah() {
+        Cat cheetahCat = new CheetahCat();
+        assertEquals("Zzzzzzz", cheetahCat.eat());
+    }
+
 //    @Test
 //    @Ignore("this test is not ready yet")
 //    public void feedTheCat() {
