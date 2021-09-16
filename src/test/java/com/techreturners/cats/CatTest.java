@@ -39,13 +39,12 @@ public class CatTest {
         Cat domesticCat = new DomesticCat();
         assertEquals(23, domesticCat.getAverageHeight());
     }
-//
-//    @Test
-//    @Ignore("this test is not ready yet")
-//    public void checkLionHeight() {
-//        Cat lionCat = new LionCat();
-//        assertEquals(1100, lionCat.getAverageHeight());
-//    }
+
+    @Test
+    public void checkLionHeight() {
+        Cat lionCat = new LionCat();
+        assertEquals(1100, lionCat.getAverageHeight());
+    }
 //
 //    @Test
 //    @Ignore("this test is not ready yet")
