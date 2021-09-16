@@ -27,13 +27,12 @@ public class CatTest {
         domesticCat.wakeUp();
         assertFalse("Cat should be awake now", domesticCat.isAsleep());
     }
-//
-//    @Test
-//    @Ignore("this test is not ready yet")
-//    public void checkCatSetting() {
-//        Cat domesticCat = new DomesticCat();
-//        assertEquals("domestic", domesticCat.getSetting());
-//    }
+
+    @Test
+    public void checkCatSetting() {
+        Cat domesticCat = new DomesticCat();
+        assertEquals("domestic", domesticCat.getSetting());
+    }
 //
 //    @Test
 //    @Ignore("this test is not ready yet")

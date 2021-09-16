@@ -3,9 +3,11 @@ package com.techreturners.cats;
 public abstract class Attribute implements Cat {
 
     private Boolean asleep;
+    private final String setting;
 
-    public Attribute(Boolean asleep) {
+    public Attribute(Boolean asleep, String setting) {
         this.asleep = asleep;
+        this.setting = setting;
     }
 
     public Boolean isAsleep() {
@@ -18,5 +20,10 @@ public abstract class Attribute implements Cat {
 
     public void wakeUp() {
         asleep = false;
+    }
+
+    public String getSetting() {
+        return setting;
+
     }
 }
