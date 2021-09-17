@@ -60,6 +60,7 @@ public class CatTest {
     @Test
     public void feedTheCat() {
         Cat domesticCat = new DomesticCat();
-        assertEquals("Purrrrrrr", domesticCat.eat());
+        String eatComment = domesticCat.eat();
+        assertTrue("Purrrrrrr".equals(eatComment) || "It will do I suppose".equals(eatComment));
     }
 }

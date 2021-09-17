@@ -1,5 +1,7 @@
 package com.techreturners.cats;
 
+import java.util.Random;
+
 public class DomesticCat extends Attribute {
 
     public DomesticCat() {
@@ -7,13 +9,9 @@ public class DomesticCat extends Attribute {
     }
 
     public String eat() {
-        double rand = Math.floor(Math.random());
-        if (rand < 0.5) {
-            return "Purrrrrrr";
-        } else {
-            return "It will do I suppose";
-        }
+        String[] randomComment = {"Purrrrrrr", "It will do I suppose"};
+        Random random = new Random();
+        int rand = random.nextInt(randomComment.length);
+        return randomComment[rand];
     }
-
-
 }
